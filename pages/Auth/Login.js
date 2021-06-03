@@ -14,6 +14,8 @@ import MenuBookIcon from '@material-ui/icons/MenuBook';
 import PersonIcon from '@material-ui/icons/Person';
 import { Row } from '../../components/Content';
 import { AccountCircle, Copyright, Email, Face, Facebook, GTranslate, Phone, Search } from '@material-ui/icons';
+import Link from 'next/link'
+
 const Login = () => {
   const [checked, setChecked] = React.useState(true);
 
@@ -64,13 +66,13 @@ const Login = () => {
                 <input type="checkbox" />
                 <label>Recuérdame</label>
               </div>
-              
+              <Link href="/Company/Profile">
               <div style={{ display:'flex', flexDirection:'row', justifyContent:'center'}}>
                 <button style={{ marginTop: 10, backgroundColor: '#4ECDC4', color: 'white', width: 90, borderColor:'#4ECDC4', borderRadius:5}}>
-                  <label style={{fontSize:18}}>Login</label>
+                  <label style={{fontSize:18}}>Sign In</label>
                 </button>
-                
               </div>
+              </Link>
 
               <div style={{ display:'flex', flexDirection:'row', justifyContent:'center'}}>
                   <label style={{fontSize:18}}>o</label>
